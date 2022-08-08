@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="CatalogService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="ContactAddressBook" EntityType="CatalogService.ContactAddressBook"/>
+            </EntityContainer>
+            <EntityType Name="ContactAddressBook">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Int32" Nullable="false"/>
+                <Property Name="TEMPLATE_ID" Type="Edm.String"/>
+                <Property Name="FIRST_NAME" Type="Edm.String" MaxLength="256"/>
+                <Property Name="LAST_NAME" Type="Edm.String" MaxLength="256"/>
+                <Property Name="PHONE_NUMBER" Type="Edm.String" MaxLength="50"/>
+                <Property Name="PRIMARY_MAIL" Type="Edm.String" MaxLength="64"/>
+                <Property Name="SECONDARY_MAIL" Type="Edm.String" MaxLength="64"/>
+                <Property Name="GENDER" Type="Edm.String"/>
+                <Property Name="COUNTRY" Type="Edm.String"/>
+            </EntityType>
+            <Annotations Target="CatalogService.ContactAddressBook/TEMPLATE_ID">
+                <Annotation Term="Common.Label" String="Template ID"/>
+            </Annotations>
+            <Annotations Target="CatalogService.ContactAddressBook/FIRST_NAME">
+                <Annotation Term="Common.Label" String="First Name"/>
+            </Annotations>
+            <Annotations Target="CatalogService.ContactAddressBook/LAST_NAME">
+                <Annotation Term="Common.Label" String="Last Name"/>
+            </Annotations>
+            <Annotations Target="CatalogService.ContactAddressBook/PHONE_NUMBER">
+                <Annotation Term="Common.Label" String="Phone Number"/>
+            </Annotations>
+            <Annotations Target="CatalogService.ContactAddressBook/PRIMARY_MAIL">
+                <Annotation Term="Common.Label" String="Primary Mail"/>
+            </Annotations>
+            <Annotations Target="CatalogService.ContactAddressBook/SECONDARY_MAIL">
+                <Annotation Term="Common.Label" String="Secondary Mail"/>
+            </Annotations>
+            <Annotations Target="CatalogService.ContactAddressBook/GENDER">
+                <Annotation Term="Common.Label" String="Gender"/>
+            </Annotations>
+            <Annotations Target="CatalogService.ContactAddressBook/COUNTRY">
+                <Annotation Term="Common.Label" String="Country"/>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
