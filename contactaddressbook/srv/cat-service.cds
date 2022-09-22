@@ -1,6 +1,6 @@
 using {sap.CONTACTADDRESSBOOK as my} from '../db/data-model';
 
-service CatalogService {
+service CatalogService @(requires: 'authenticated-user'){
     @odata.draft.enabled
     entity ContactAddressBook as projection on my.CONTACT_ADDRESS_BOOK{
         *,
