@@ -1,0 +1,4 @@
+entity CHARAN_LEAD_SPEND_MAT_GROUP_T {
+  key ID : String(36);
+  LEAD_SPEND_MAT_GROUP : String(100);
+};

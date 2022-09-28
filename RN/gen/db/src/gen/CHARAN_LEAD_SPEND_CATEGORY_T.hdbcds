@@ -1,0 +1,4 @@
+entity CHARAN_LEAD_SPEND_CATEGORY_T {
+  key ID : String(36);
+  LEAD_SPEND_CATEGORY : String(100);
+};

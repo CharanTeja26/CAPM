@@ -1,0 +1,4 @@
+entity CHARAN_SUPPLIERGROUPS {
+  key YSGROUP : String(30);
+  YSGRTXT : String(60);
+};

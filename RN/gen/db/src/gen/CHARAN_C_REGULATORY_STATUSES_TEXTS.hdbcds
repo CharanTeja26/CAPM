@@ -1,0 +1,5 @@
+entity CHARAN_C_REGULATORY_STATUSES_TEXTS {
+  key LOCALE : String(14);
+  key ID : Decimal(4, 0);
+  DESCRIPTION : String(100);
+};

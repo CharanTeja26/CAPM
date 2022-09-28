@@ -1,0 +1,4 @@
+entity CHARAN_REGULATORY_NOTICE_COLLECTION_WAVE_T {
+  key ID : String(36);
+  RN_COLLECTION_WAVE : String(50);
+};

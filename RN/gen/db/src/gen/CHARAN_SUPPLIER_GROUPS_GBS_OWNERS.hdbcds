@@ -1,0 +1,5 @@
+entity CHARAN_SUPPLIER_GROUPS_GBS_OWNERS {
+  key SUPPLIER_GROUP_CODE : String(18);
+  key OWNER_EMAIL : String(256);
+  DEFAULT_OWNER : Boolean;
+};

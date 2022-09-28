@@ -1,1 +1,19 @@
-{}
+{
+    "requires": {
+        "[development]": {
+            "requires": {
+                "auth": {
+                    "strategy": "mock",
+                    "users": {
+                        "Charan": {
+                            "password": "Charan",
+                            "roles": [
+                                "authenticated-user"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
